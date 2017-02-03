@@ -1,0 +1,23 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <h4 class="text-center text-muted">${user.name.first} - details</h4>
+        </ai-dialog-header>
+        <ai-dialog-body class="text-center">
+            <img class="img-circle img-responsive img-center" src.bind="user.picture.large" />
+            <h4 class="text-primary text-muted text-uppercase">${user.name.first} ${user.name.last}</h4>
+            <p class="list-group-item-text">
+                <span class="span-block"> ${user.email} </span>
+                <span class="span-block"> ${user.cell} /  ${user.phone}</span>
+                <span class="span-block">${user.location.street} </span>
+                <span class="span-block">${user.location.city} ,${user.location.state} ${user.location.postcode} </span>
+            </p>
+        </ai-dialog-body>
+
+        <ai-dialog-footer class="text-center">
+            <button class="btn btn-default btn-rounded" click.trigger="controller.ok(message)">CLOSE</button>
+        </ai-dialog-footer>
+
+    </ai-dialog>
+
+</template>

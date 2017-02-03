@@ -13,8 +13,22 @@ body{
 .span-block{
     display: block !important;
 }
+.btn-rounded{
+        border-radius:60px;
+}
 .see-more-btn{
     margin-top:5px;
     margin-bottom: 25px;
     border-radius:60px;
+}
+.img-center{
+    margin: 0 auto !important;
+}
+
+ai.dialog{
+    margin-top:35px !important;
+}
+ai-dialog-container{
+    z-index:10000;
+    margin-top:30px;
 }

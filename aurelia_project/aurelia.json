@@ -134,11 +134,31 @@
             "env": "dev"
           },
           {
+            "name": "aurelia-dialog",
+            "path": "../node_modules/aurelia-dialog/dist/amd",
+            "main": "aurelia-dialog",
+            "resources": [
+              "../../styles/output.css"
+            ]
+          },
+          {
             "name": "nprogress",
             "path": "../node_modules/nprogress",
             "main": "nprogress",
             "resources": [
               "nprogress.css"
+            ]
+          },
+          "jquery",
+          {
+            "name": "bootstrap",
+            "path": "../node_modules/bootstrap/dist",
+            "main": "js/bootstrap.min",
+            "deps": [
+              "jquery"
+            ],
+            "exports": "$",
+            "resources": [
             ]
           }
         ]

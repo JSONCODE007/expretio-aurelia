@@ -1,5 +1,11 @@
-<template bindable="curUser">
-    <h4 class="list-group-item-heading">${user.name.first} ${user.name.last}</h4>
-    <p class="list-group-item-text">${user.email}</p>
-    <img class="img-circle" src.bind="user.picture.medium" />
+<template>
+    <img class="img-circle img-responsive" src.bind="user.picture.large" />
+    <h4 class="text-primary text-muted text-uppercase">${user.name.first} ${user.name.last}</h4>
+    <p class="list-group-item-text">
+        <span class="span-block"> ${user.email} </span>
+        <span class="span-block"> ${user.cell} </span>
+        <span class="span-block text-capitalize">${user.location.city}</span>
+
+    </p>
+    <a class="btn btn-primary btn-sm see-more-btn" click.trigger="showModalDetails(user)"> See more </a>
 </template>

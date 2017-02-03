@@ -20,7 +20,7 @@ export class UserAPI {
                 .withBaseUrl('https://randomuser.me/api/')
         })
     }
-
+    //fetch randomuser api and get 50 users informations
     getAllUsers() {
         return new Promise(resolve => {
             this.httpClient.fetch('?results=50')
