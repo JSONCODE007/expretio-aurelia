@@ -1,0 +1,5 @@
+<template bindable="curUser">
+    <h4 class="list-group-item-heading">${user.name.first} ${user.name.last}</h4>
+    <p class="list-group-item-text">${user.email}</p>
+    <img class="img-circle" src.bind="user.picture.medium" />
+</template>

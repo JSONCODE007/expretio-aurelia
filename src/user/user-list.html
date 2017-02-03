@@ -1,0 +1,15 @@
+<template>
+  <require from="./user-item.html"></require>
+  <div class=" user-list" if.bind="users != null">
+    <div repeat.for="user of users" class="col-md-3">
+      <img class="img-circle img-responsive" src.bind="user.picture.large" />
+      <h4 class="text-primary text-muted">${user.name.first} ${user.name.last}</h4>
+      <p class="list-group-item-text">
+        <span class="span-block"> ${user.email} </span>
+        <span class="span-block"> ${user.cell} </span>
+        <span class="span-block text-capitalize">${user.location.city} </span>
+      </p>
+      <a class="btn btn-primary btn-sm see-more-btn" route-href="route: user-details; params.bind: {id:user.name.first}" > See more </a>
+    </div>
+  </div>
+</template>

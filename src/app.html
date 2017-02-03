@@ -1,0 +1,16 @@
+<template>
+  <require from="./styles.css"></require>
+  <require from="./user/user-list"></require>
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand text-center" href="#">
+        <span> Users List API  </span>
+      </a>
+    </div>
+  </nav>
+  <div class="container">
+    <user-list class="col-md-12"></user-list>
+    </div>
+    <loading-indicator></loading-indicator>
+</template>
