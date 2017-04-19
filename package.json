@@ -11,6 +11,9 @@
     "start": "au build --env prod && au run --env prod"
   },
   "dependencies": {
+    "@polymer/paper-button": "0.0.3",
+    "@polymer/paper-card": "0.0.3",
+    "Polymer": "^1.6.1--",
     "aurelia-animator-css": "^1.0.0",
     "aurelia-bootstrapper": "^1.0.0",
     "aurelia-dialog": "^1.0.0-beta.3.0.1",
@@ -19,9 +22,11 @@
     "bootstrap": "^3.3.7",
     "express": "^4.14.1",
     "jquery": "^3.1.1",
+    "npm-polymer-elements": "0.0.1",
     "nprogress": "^0.2.0",
     "requirejs": "^2.3.2",
-    "text": "github:requirejs/text#latest"
+    "text": "github:requirejs/text#latest",
+    "webcomponentsjs": "^1.0.2"
   },
   "peerDependencies": {},
   "devDependencies": {

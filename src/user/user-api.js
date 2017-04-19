@@ -2,29 +2,35 @@
  * @author:Thierno Barry
  * @date: 02/02/2016
  */
-import { inject } from 'aurelia-dependency-injection';
-import { HttpClient } from 'aurelia-fetch-client';
+import {inject} from 'aurelia-dependency-injection';
+import {HttpClient} from 'aurelia-fetch-client';
 
 @inject(HttpClient)
-export class UserAPI {
-    constructor(httpClient) {
-        this.httpClient = httpClient;
-        //setup http client router parameters 
-        this.configurehttpRouter();
-    }
+export class UserAPI
+{
+  constructor(httpClient)
+  {
+    this.httpClient = httpClient;
+    //setup http client router parameters
+    this.configurehttpRouter();
+  }
 
-    configurehttpRouter() {
-        this.httpClient.configure(config => {
-            config.
-                useStandardConfiguration()
-                .withBaseUrl('https://randomuser.me/api/')
-        })
-    }
-    //fetch randomuser api and get 50 users informations
-    getAllUsers() {
-        return new Promise(resolve => {
-            this.httpClient.fetch('?results=50')
-                .then(response => resolve(response.json()));
-        })
-    }
+  configurehttpRouter()
+  {
+    this.httpClient.configure(config =>
+    {
+      config.useStandardConfiguration()
+        .withBaseUrl('https://randomuser.me/api/')
+    })
+  }
+
+  //fetch randomuser api and get 50 users informations
+  getAllUsers()
+  {
+    return new Promise(resolve =>
+    {
+      this.httpClient.fetch('?results=50')
+        .then(response => resolve(response.json()));
+    })
+  }
 }

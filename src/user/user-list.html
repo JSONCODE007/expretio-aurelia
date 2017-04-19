@@ -1,7 +1,10 @@
 <template>
-  <div class=" user-list" if.bind="users != null">
-    <div repeat.for="user of users" class="col-md-3">
-     <compose view="./user-item.html" model.bind="user"></compose>
+  <div class=" user-list"
+       if.bind="users != null">
+    <div repeat.for="user of users"
+         class="col-md-3">
+      <compose view="./user-item.html"
+               model.bind="user"></compose>
     </div>
   </div>
 </template>
