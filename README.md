@@ -1,2 +1,2 @@
 # expretio-aurelia
-little project to understand the basics of aurelia js framework 
+project to understand the basics of aurelia js framework 
